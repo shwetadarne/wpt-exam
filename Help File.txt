@@ -1,0 +1,79 @@
+npx create-react-app project5
+
+react bootstrap:
+npm install react-bootstrap bootstrap@5.1.3
+
+index:
+import 'bootstrap/dist/css/bootstrap.min.css';
+*******************
+bootstrap--- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+backend:
+npm init
+
+npm install mysql
+
+npm install express
+
+npm install bluebird
+
+
+
+npm install nodemon
+
+"start": "nodemon src/main.js",
+
+npm install cors
+
+
+open workbench>>>>>>>>>>.
+create one database >>>>> project3
+use project3
+create table user>>>>>> varchar ni ghaych
+
+
+
+user:
+1.
+const mysql = require("mysql");
+const Promise = require("bluebird");
+Promise.promisifyAll(require("mysql/lib/Connection").prototype);
+
+
+************************************************
+
+
+main:
+const express = require("express");
+const app = express();
+const cors = require("cors");
+app.use(cors());
+const {selectUser} = require("./user");
+
+***********************************************
+App.js
+App.js  >>>>. registration form sathi 2 lines
+
+he react mdhe install kraych ahe**********
+npm install axios
+import axios from "axios";
+import { useEffect, useState } from "react";
+
+ 
+
+**************************************
+
+Steps to be followed :-
+1. Make a project folder
+2. Make an src folder
+3. Node init
+4. Make user.js
+5. Connect database and create functions addUser(), selectAllUser()
+6. Make main.js
+7. Copy the code from express of hello world.
+8. Change the main.js according to your database
+9. Execute main.js
+10. Your api is ready.
+
+//  use following command in mysql workbench to change user passward in case required
+//=>//---ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';---///
+
