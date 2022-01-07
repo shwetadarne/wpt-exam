@@ -1,0 +1,27 @@
+body {
+  background-image: url("https://picsum.photos/1200");
+}
+
+.c1 {
+  height: 3rem;
+  width: 23rem;
+  margin-top: 3rem;
+  background-color: wheat;
+}
+
+.c2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn {
+  width: 10rem;
+  height: 2rem;
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+.c4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
